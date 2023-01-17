@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %} <br /><br />
+<table class="table">
+  <th scope="col">ROLL NO</th>
+  <th scope="col">NAME</th>
+
+  {% for student in all_students %}
+  <tr>
+    <td>{{student.roll_no}}</td>
+    <td>{{student.name}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
